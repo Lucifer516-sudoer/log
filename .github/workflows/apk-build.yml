@@ -55,6 +55,7 @@ jobs:
         run: |
           flutter config --no-analytics # disable flutter analytics
           cd log
+          ls -alh
           flet build apk --verbose    # adapt the command to your needs - https://flet.dev/docs/publish
 
       - name: Upload APK Artifact
